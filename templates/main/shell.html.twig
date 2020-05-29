@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="content-page--shell content-page">
+    <div class="top__biography shell">
+
+        {# top | terminal bar #}
+        <div class="terminal-bar">
+            <div class="bar-btn__group">
+                <div class="bar__btn btn--red"></div>
+                <div class="bar__btn btn--yellow"></div>
+                <div class="bar__btn btn--green"></div>
+            </div>
+            <div class="bar__name">guest@arnaud: ~</div>
+            <div></div>
+        </div>
+
+        {# terminal content #}
+        <div class="biography__content scrolling">
+
+            <div class="terminal--display">
+                <p class="terminal-intro">
+                    Welcome to Arnaud porfolio, the friendly and interactive portfolio.
+                </p>
+                <p class="terminal-intro no-margin">
+                    Type help for more informations.
+                </p>
+
+                <p class="terminal-response no-margin">
+                    {# response here  #}
+                </p>
+            </div>
+            <div class="terminal-command terminal-line">
+                <span class="terminal-arrow">&#8702 </span> <span class="terminal-home">~ </span>
+                <input type="text" id="input" class="input" autofocus autocorrect="off" spellcheck="false"
+                    maxlength="120">
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/shell-min.js') }}"></script>
+{% endblock %}

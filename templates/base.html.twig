@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {% include "layouts/_head.html.twig" %}
+    
+    <body class="page home">
+        {% block header %}
+            {% include "layouts/_menu.html.twig" %}
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

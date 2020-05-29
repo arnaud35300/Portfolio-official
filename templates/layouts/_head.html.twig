@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/icons/bash.png">
+    <title>{% block title %}Arnaud Guillard{% endblock %}</title>
+
+     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- animate css  -->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}"/>
+    <!-- semantic ui base  -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic-ui.css') }}">
+
+    <!-- icons link -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/icon.css') }}">
+
+    <!-- personal link -->
+    <link rel="stylesheet" href="{{ asset('css/style-min.css') }}">
+
+    {% block stylesheets %}{% endblock %}
+</head>

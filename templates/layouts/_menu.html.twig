@@ -1,0 +1,40 @@
+<!-- The sidebar -->
+<div class="menu column sidebar">
+    <a class="menu__item {{ app.request.get('_route') starts with 'home' ? 'active' }}" href="{{ path('home') }}">Home</a>
+    <a class="menu__item {{ app.request.get('_route') starts with 'skills' ? 'active' }}" href="{{ path("skills") }}">Skills</a>
+    <a class="menu__item {{ app.request.get('_route') starts with 'projects' ? 'active' }}" href="{{ path('projects') }}">Projects</a>
+    <a class="menu__item {{ app.request.get('_route') starts with 'shell' ? 'active' }}" href="{{ path('shell') }}">Shell</a>
+    <a class="menu__item {{ app.request.get('_route') starts with 'contact' ? 'active' }}" href="{{ path('contact') }}">Contact</a>
+
+    <div class="menu__social icon">
+        <a href="https://twitter.com/GuillardArnaud1" class="ui animated button social__link" alt="twitter profile link"
+            tabindex="0" target="_blank">
+            <div class="visible visible--icon content">
+                <i class="twitter icon"></i>
+            </div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/arnaud-guillard/" class="ui animated button social__link" alt="linkedin profile link"
+            tabindex="0" target="_blank">
+            <div class="visible visible--icon content">
+                <i class="linkedin icon"></i>
+            </div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </a>
+
+        <a href="https://github.com/arnaud35300" class="ui animated button social__link" alt="github profile link"
+            tabindex="0" target="_blank">
+            <div class="visible visible--icon content">
+                <i class="github icon"></i>
+            </div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </a>
+    </div>
+</div>

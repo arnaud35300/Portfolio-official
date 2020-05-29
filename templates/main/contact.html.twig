@@ -1,0 +1,73 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+{% block link %}
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+{% endblock %}
+
+<div class="content-page--contact content-page">
+
+    <div class="top--contact">
+
+        <div class="left--contact">
+            <div class="contact-info">
+                <i class="map marker icon"></i>
+                <h4 class="info__title">Location</h4>
+                <p class="info__paragraph">Baillé, Bretagne, France</p>
+            </div>
+            <div class="contact-info">
+                <i class="envelope icon"></i>
+                <h4 class="info__title">Email</h4>
+                <p class="info__paragraph">arnaudguillardcontactpro@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <i class="phone icon"></i>
+                <h4 class="info__title">Mobile</h4>
+                <p class="info__paragraph">+33 (0)7 69 92 99 71</p>
+            </div>
+            <div id='map' class="map"></div>
+        </div>
+
+
+        <div class="right--contact">
+            <form id="form" action="" class="contact-form">
+
+                <div class="field firstname-container">
+                    <label for="firstname" class="firstname">Firstname<span id="error-firstname" class="field-error"></span></label>
+                    <input id="firstname" type="text" required class="firstname">
+                </div>
+
+                <div class="field lastname-container">
+                    <label for="lastname" class="lastname">Lastname<span id="error-lastname" class="field-error"></span></label>
+                    <input id="lastname" type="text" required class="lastname">
+                </div>
+
+                <div class="field email-container">
+                    <label for="email" class="email">Email<span id="error-email" class="field-error"></span></label>
+                    <input id="email" type="email" required class="email">
+                </div>
+
+                <div class="field subject-container">
+                    <label for="subject" class="subject">Subject<span id="error-subject" class="field-error"></span></label>
+                    <input id="subject" type="text" required class="subject">
+                </div>
+
+                <div class="field body-container">
+                    <label for="body" class="body-message">Content<span id="error-body-message" class="field-error"></span></label>
+                    <textarea id="body-message" name="body" cols="30" rows="10" class="body-message"></textarea>
+                </div>
+
+                <div class="field btn-container">
+                    <button class="submit btn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<script src="{{ asset('js/contact-min.js') }}"></script>
+{% endblock %}
