@@ -21,11 +21,11 @@ var commands = {
     },
     project: {
         name: 'projects',
-        content: 'You can see all my project <a class="echo-arg" href="/skills">here</a>!'
+        content: 'You can see all my project <a class="echo-arg" href="/projects">here</a>!'
     },
     contact: {
         name: 'contact',
-        content: 'You can join me at this email: <span class="terminal-email">arnaudguillardcontactpro@gmail.com</span> !'
+        content: 'You can join me at this email: <span class="terminal-email">arnaudguillardcontactpro@gmail.com</span>. You can also come <a class="echo-arg" href="/contact">here</a> to contact me'
     },
     destroy: {
         name: 'sudo rm -rf /',
