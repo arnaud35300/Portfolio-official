@@ -13,7 +13,7 @@ var commands = {
     },
     about: {
         name: 'about',
-        content: 'Hi, I\'m Arnaud Guillard.'
+        content: 'Hi, I\'m Arnaud Guillard. I\'m web developer and like you apparently, i don\'t like graphical interfaces.'
     },
     skills: {
         name: 'skills',

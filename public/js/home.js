@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 // keyboards typing simulate
 var title = document.getElementById('text');
-var text = ['web developer', 'linux addict', 'beginning C programmer', 'open source supporter', 'specialized in Symfony framework', 'raccoon'];
+var text = ['web developer', 'backend developer', 'fullstack developer', 'curious', 'specialized in Symfony framework'];
 var timer = setInterval(function () {
     typingEffect(text, title);
 }, 500);
