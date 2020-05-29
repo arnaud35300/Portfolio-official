@@ -47,7 +47,6 @@ var handleSubmitEvent = function (e) {
         subject: subject,
         content: content
     };
-    console.log('submit');
     sendData(url, data);
 };
 document.addEventListener('DOMContentLoaded', function () {

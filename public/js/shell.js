@@ -76,7 +76,6 @@ var guestbookContent = function () {
                 var element = obj[key];
                 commands.read.content += element.username + " : " + element.content + " " + (obj[key + 1] === "undefined" ? 's' : '</br>');
             }
-            console.log('e')
             commands.read.content = commands.read.content.replace(new RegExp('</br>' + '$'), ''); // remove last </br>
         })["catch"](function (err) {
             console.error("Error, press F5 to refresh.");
